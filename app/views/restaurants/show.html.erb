@@ -3,13 +3,19 @@
     <div class="col">
       <h1>hello from the show restaurant</h1>
       <%= link_to "List of restaurants", restaurants_path %>
-      
+
 
       <p><%= @restaurant.photo %></p>
 
       <p>Restaurant Name: <%= @restaurant.name %></p>
       <p>Restaurant Address: <%= @restaurant.address %></p>
       <p>Restaurant Rating: <%= @restaurant.raiting %></p>
+      <div class="menu">
+       <strong > <h3>Menu:</h3> </strong>
+        <p>Nems</p>
+      </div>
     </div>
+
+
   </div>
 </div>

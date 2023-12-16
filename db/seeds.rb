@@ -8,8 +8,9 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 Restaurant.destroy_all
+Menu.destroy_all
 
-restaurant1 = Restaurant.create!(name: "Le Petit Nice", address: "Anse de Maldormé, 13008 Marseille", raiting: 3, photo_url: "https://res.cloudinary.com/djz69vbs7/image/upload/v1634173899/restaurant_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_qjxq3y.jpg")
+restaurant1 = Restaurant.create!(name: "Le Petit Nice", address: "Anse de Maldormé, 13008 Marseille", raiting: 3)
 restaurant2 = Restaurant.create!(name: "La Table de la Butte", address: "1 rue de la Butte, 13002 Marseille", raiting: 2)
 restaurant3 = Restaurant.create!(name: "Le Café des Epices", address: "4 rue du Lacydon, 13002 Marseille", raiting: 1)
 restaurant4 = Restaurant.create!(name: "La Boîte à Sardine", address: "2 rue de la Butte, 13002 Marseille", raiting: 4)

@@ -13,10 +13,12 @@
           <div>
 
             <div class="see-menu text-decoration-none">
-              <%= link_to "See Menu", restaurant_path(restaurant.id) %>
+              <%= link_to "Select", restaurant_path(restaurant.id) %>
             </div>
 
-            <div class= "photo-restaurant"></div>
+            <div class= "photo-restaurant">
+
+            </div>
                 <p><%= restaurant.name %></p>
                 <p>address: <%= restaurant.address %></p>
                 <p>rating: <%= restaurant.raiting %></p>
