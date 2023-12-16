@@ -1,8 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container ">
+  <div class="row">
+    <div class="col">
+      <h1>Fast To Eat</h1>
+      <%= link_to "List of restaurants", restaurants_path %>
+      <p>Find me in app/views/pages/home.html.erb</p>
 
-<% if user_signed_in? %>
-  <p>Hello <%= current_user.email %></p>
-<% else %>
-  <p>You are not log in</p>
-<% end %>
+      <% if user_signed_in? %>
+        <p>Hello <%= current_user.email %></p>
+      <% else %>
+        <p>You are not log in</p>
+      <% end %>
+    </div>
+  </div>
+</div>
